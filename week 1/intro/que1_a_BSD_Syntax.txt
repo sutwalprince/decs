@@ -1,0 +1,302 @@
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:02 /sbin/init splash
+      2 ?        S      0:00 [kthreadd]
+      3 ?        S      0:00 [pool_workqueue_release]
+      4 ?        I<     0:00 [kworker/R-rcu_gp]
+      5 ?        I<     0:00 [kworker/R-sync_wq]
+      6 ?        I<     0:00 [kworker/R-kvfree_rcu_reclaim]
+      7 ?        I<     0:00 [kworker/R-slub_flushwq]
+      8 ?        I<     0:00 [kworker/R-netns]
+     10 ?        I<     0:00 [kworker/0:0H-events_highpri]
+     11 ?        I      0:01 [kworker/0:1-events]
+     12 ?        I      0:03 [kworker/u32:0-flush-259:0]
+     13 ?        I<     0:00 [kworker/R-mm_percpu_wq]
+     14 ?        I      0:00 [rcu_tasks_kthread]
+     15 ?        I      0:00 [rcu_tasks_rude_kthread]
+     16 ?        I      0:00 [rcu_tasks_trace_kthread]
+     17 ?        S      0:00 [ksoftirqd/0]
+     18 ?        I      0:02 [rcu_preempt]
+     19 ?        S      0:00 [rcu_exp_par_gp_kthread_worker/0]
+     20 ?        S      0:00 [rcu_exp_gp_kthread_worker]
+     21 ?        S      0:00 [migration/0]
+     22 ?        S      0:00 [idle_inject/0]
+     23 ?        S      0:00 [cpuhp/0]
+     24 ?        S      0:00 [cpuhp/1]
+     25 ?        S      0:00 [idle_inject/1]
+     26 ?        S      0:00 [migration/1]
+     27 ?        S      0:00 [ksoftirqd/1]
+     29 ?        I<     0:00 [kworker/1:0H-events_highpri]
+     30 ?        S      0:00 [cpuhp/2]
+     31 ?        S      0:00 [idle_inject/2]
+     32 ?        S      0:00 [migration/2]
+     33 ?        S      0:00 [ksoftirqd/2]
+     35 ?        I<     0:00 [kworker/2:0H-events_highpri]
+     36 ?        S      0:00 [cpuhp/3]
+     37 ?        S      0:00 [idle_inject/3]
+     38 ?        S      0:00 [migration/3]
+     39 ?        S      0:00 [ksoftirqd/3]
+     40 ?        I      0:00 [kworker/3:0-events]
+     41 ?        I<     0:00 [kworker/3:0H-kblockd]
+     42 ?        S      0:00 [cpuhp/4]
+     43 ?        S      0:00 [idle_inject/4]
+     44 ?        S      0:00 [migration/4]
+     45 ?        S      0:00 [ksoftirqd/4]
+     47 ?        I<     0:00 [kworker/4:0H-events_highpri]
+     48 ?        S      0:00 [cpuhp/5]
+     49 ?        S      0:00 [idle_inject/5]
+     50 ?        S      0:00 [migration/5]
+     51 ?        S      0:00 [ksoftirqd/5]
+     53 ?        I<     0:00 [kworker/5:0H-kblockd]
+     54 ?        S      0:00 [cpuhp/6]
+     55 ?        S      0:00 [idle_inject/6]
+     56 ?        S      0:00 [migration/6]
+     57 ?        S      0:01 [ksoftirqd/6]
+     59 ?        I<     0:00 [kworker/6:0H-events_highpri]
+     60 ?        S      0:00 [cpuhp/7]
+     61 ?        S      0:00 [idle_inject/7]
+     62 ?        S      0:00 [migration/7]
+     63 ?        S      0:00 [ksoftirqd/7]
+     65 ?        I<     0:00 [kworker/7:0H-events_highpri]
+     66 ?        S      0:00 [kdevtmpfs]
+     67 ?        I<     0:00 [kworker/R-inet_frag_wq]
+     68 ?        S      0:00 [kauditd]
+     69 ?        S      0:00 [khungtaskd]
+     70 ?        S      0:00 [oom_reaper]
+     73 ?        I<     0:00 [kworker/R-writeback]
+     74 ?        S      0:00 [kcompactd0]
+     75 ?        SN     0:00 [ksmd]
+     76 ?        SN     0:00 [khugepaged]
+     77 ?        I<     0:00 [kworker/R-kintegrityd]
+     78 ?        I<     0:00 [kworker/R-kblockd]
+     79 ?        I<     0:00 [kworker/R-blkcg_punt_bio]
+     80 ?        S      0:00 [irq/9-acpi]
+     82 ?        I      0:00 [kworker/4:1-mm_percpu_wq]
+     83 ?        I<     0:00 [kworker/R-tpm_dev_wq]
+     84 ?        I<     0:00 [kworker/R-ata_sff]
+     85 ?        I<     0:00 [kworker/R-md]
+     86 ?        I<     0:00 [kworker/R-md_bitmap]
+     87 ?        I<     0:00 [kworker/R-edac-poller]
+     88 ?        I<     0:00 [kworker/R-devfreq_wq]
+     89 ?        S      0:00 [watchdogd]
+     91 ?        I<     0:00 [kworker/0:1H-i915_cleanup]
+     94 ?        S      0:00 [kswapd0]
+     95 ?        S      0:00 [ecryptfs-kthread]
+     96 ?        I<     0:00 [kworker/R-kthrotld]
+     97 ?        S      0:00 [irq/121-aerdrv]
+     98 ?        S      0:00 [irq/121-pcie-dpc]
+     99 ?        S      0:00 [irq/122-aerdrv]
+    100 ?        S      0:00 [irq/122-pcie-dpc]
+    101 ?        S      0:00 [irq/123-aerdrv]
+    102 ?        S      0:00 [irq/123-pcie-dpc]
+    103 ?        S      0:00 [irq/124-aerdrv]
+    104 ?        S      0:00 [irq/124-pcie-dpc]
+    105 ?        I<     0:00 [kworker/R-acpi_thermal_pm]
+    106 ?        S      0:00 [hwrng]
+    107 ?        I<     0:00 [kworker/R-mld]
+    108 ?        I<     0:00 [kworker/R-ipv6_addrconf]
+    116 ?        I<     0:00 [kworker/R-kstrp]
+    117 ?        I      0:01 [kworker/2:1-events]
+    118 ?        I      0:00 [kworker/5:1-mm_percpu_wq]
+    133 ?        I<     0:00 [kworker/R-charger_manager]
+    135 ?        I<     0:00 [kworker/1:1H-i915_cleanup]
+    161 ?        I<     0:00 [kworker/6:1H-i915_cleanup]
+    178 ?        I<     0:00 [kworker/4:1H-kblockd]
+    183 ?        I<     0:00 [kworker/7:1H-kblockd]
+    198 ?        I<     0:00 [kworker/3:1H]
+    199 ?        I<     0:00 [kworker/5:1H]
+    200 ?        I<     0:00 [kworker/2:1H-i915_cleanup]
+    216 ?        S      0:00 [scsi_eh_0]
+    217 ?        I<     0:00 [kworker/R-scsi_tmf_0]
+    233 ?        S      0:15 [irq/74-ELAN0709:00]
+    235 ?        I<     0:00 [kworker/R-nvme-wq]
+    236 ?        I<     0:00 [kworker/R-nvme-reset-wq]
+    238 ?        I<     0:00 [kworker/R-nvme-delete-wq]
+    240 ?        I<     0:00 [kworker/R-nvme-auth-wq]
+    290 ?        S      0:01 [jbd2/nvme0n1p7-8]
+    291 ?        I<     0:00 [kworker/R-ext4-rsv-conversion]
+    345 ?        S<s    0:00 /usr/lib/systemd/systemd-journald
+    359 ?        Ss     0:01 /usr/lib/systemd/systemd-oomd
+    381 ?        Ssl    0:00 /usr/lib/systemd/systemd-timesyncd
+    388 ?        Ss     0:00 /usr/lib/systemd/systemd-udevd
+    389 ?        Ss     0:00 /usr/lib/systemd/systemd-resolved
+    418 ?        S      0:00 [psimon]
+    483 ?        S      0:00 [irq/153-mei_me]
+    550 ?        I<     0:00 [kworker/R-cfg80211]
+    552 ?        I      0:00 [kworker/7:2-events]
+    650 ?        I<     0:00 [kworker/R-cryptd]
+    657 ?        I<     0:00 [kworker/R-ttm]
+    677 ?        S      0:00 [card1-crtc0]
+    679 ?        S      0:00 [card1-crtc1]
+    680 ?        S      0:00 [card1-crtc2]
+    694 ?        S      0:23 [irq/155-rtw88_pci]
+    989 ?        Ss     0:00 avahi-daemon: running [Prince.local]
+    990 ?        Ss     0:00 /usr/libexec/bluetooth/bluetoothd
+    991 ?        Ss     0:02 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    997 ?        Ssl    0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+   1008 ?        Ssl    0:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+   1022 ?        Ssl    0:03 /usr/lib/snapd/snapd
+   1042 ?        Ssl    0:00 /usr/libexec/accounts-daemon
+   1043 ?        Ss     0:00 /usr/sbin/cron -f -P
+   1044 ?        Ssl    0:00 /usr/libexec/switcheroo-control
+   1047 ?        Ss     0:00 /usr/lib/systemd/systemd-logind
+   1048 ?        Ssl    0:00 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+   1049 ?        Ssl    0:00 /usr/libexec/udisks2/udisksd
+   1079 ?        S      0:00 avahi-daemon: chroot helper
+   1103 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+   1113 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+   1118 ?        Ss     0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+   1222 ?        S<     0:00 [krfcommd]
+   1253 ?        Ssl    0:00 /usr/libexec/upowerd
+   1264 ?        Ssl    0:00 /usr/sbin/ModemManager
+   1637 ?        Ss     0:00 /usr/sbin/cupsd -l
+   1640 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+   1653 ?        Ssl    0:00 /usr/sbin/gdm3
+   1683 ?        S      0:00 [psimon]
+   1723 ?        SNsl   0:00 /usr/libexec/rtkit-daemon
+   1867 ?        Ssl    0:00 /usr/libexec/colord
+   2312 ?        Ssl    0:00 /usr/sbin/cups-browsed
+   2313 ?        Ssl    0:00 /usr/libexec/power-profiles-daemon
+   2326 ?        Sl     0:00 gdm-session-worker [pam/gdm-password]
+   2334 ?        Ss     0:01 /usr/lib/systemd/systemd --user
+   2335 ?        S      0:00 (sd-pam)
+   2348 ?        Ss     0:00 /usr/bin/mpris-proxy
+   2349 ?        S<sl   0:01 /usr/bin/pipewire
+   2351 ?        Ssl    0:00 /usr/bin/pipewire -c filter-chain.conf
+   2354 ?        S<sl   0:02 /usr/bin/wireplumber
+   2355 ?        S<sl   0:00 /usr/bin/pipewire-pulse
+   2356 ?        Ss     0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   2361 ?        SLsl   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+   2395 ?        Ssl    0:00 /usr/libexec/xdg-document-portal
+   2399 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+   2407 ?        Ss     0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   2451 tty2     Ssl+   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+   2460 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+   2536 ?        Ssl    0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+   2537 ?        Ssl    0:00 /usr/libexec/gnome-session-ctl --monitor
+   2555 ?        Ssl    0:00 /usr/libexec/gvfsd
+   2563 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+   2578 ?        Ssl    0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   2612 ?        Sl     0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+   2625 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+   2626 ?        Ssl    3:21 /usr/bin/gnome-shell
+   2670 ?        Sl     0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+   2690 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+   2697 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+   2708 ?        Sl     0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   2712 ?        Ssl    0:07 /usr/bin/ibus-daemon --panel disable
+   2715 ?        Ssl    0:00 /usr/libexec/gsd-a11y-settings
+   2717 ?        Ssl    0:00 /usr/libexec/gsd-color
+   2732 ?        Ssl    0:00 /usr/libexec/gsd-datetime
+   2733 ?        Ssl    0:00 /usr/libexec/gsd-housekeeping
+   2738 ?        Ssl    0:00 /usr/libexec/gsd-keyboard
+   2741 ?        Ssl    0:00 /usr/libexec/gsd-media-keys
+   2745 ?        Ssl    0:00 /usr/libexec/gsd-power
+   2749 ?        Ssl    0:00 /usr/libexec/gsd-print-notifications
+   2751 ?        Ssl    0:00 /usr/libexec/gsd-rfkill
+   2755 ?        Ssl    0:00 /usr/libexec/gsd-screensaver-proxy
+   2757 ?        Ssl    0:00 /usr/libexec/gsd-sharing
+   2760 ?        Ssl    0:00 /usr/libexec/gsd-smartcard
+   2766 ?        Ssl    0:00 /usr/libexec/gsd-sound
+   2767 ?        Ssl    0:00 /usr/libexec/gsd-wacom
+   2772 ?        Sl     0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+   2775 ?        Sl     0:00 /usr/libexec/gsd-disk-utility-notify
+   2777 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+   2830 ?        Sl     0:00 /usr/libexec/goa-daemon
+   2867 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   2869 ?        Sl     0:05 /usr/libexec/ibus-extension-gtk3
+   2878 ?        Sl     0:00 /usr/libexec/ibus-portal
+   2921 ?        Sl     0:00 /usr/libexec/goa-identity-service
+   2937 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+   2947 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+   2955 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+   2958 ?        Sl     0:00 /usr/libexec/gsd-printer
+   2966 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+   2982 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+   2983 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+   3010 ?        Sl     0:02 /usr/libexec/ibus-engine-simple
+   3035 ?        Ssl    0:00 /usr/libexec/dconf-service
+   3041 ?        Ss     0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+   3080 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.21 /org/gtk/gvfs/exec_spaw/0
+   3112 ?        Sl     0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+   3147 ?        SNsl   0:00 /usr/libexec/localsearch-3
+   3154 ?        Sl     0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+   3174 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal
+   3180 ?        Ssl    0:01 /usr/libexec/xdg-desktop-portal-gnome
+   3190 ?        Sl     0:01 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+   3245 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+   3246 ?        Ssl    0:01 /usr/libexec/xdg-desktop-portal-gtk
+   3298 ?        SNl    0:00 /usr/libexec/localsearch-extractor-3 --socket-fd 3
+   3402 ?        S      0:00 /bin/bash /usr/bin/brave-browser-stable
+   3407 ?        S      0:00 cat
+   3408 ?        S      0:00 cat
+   3409 ?        SLl    2:08 /opt/brave.com/brave/brave
+   3430 ?        Sl     0:00 /opt/brave.com/brave/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/prince/.config/BraveSoftware/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=Ubuntu 25.04 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=138.1.80.125 --initial-client-fd=5 --shared-client-connection
+   3433 ?        Sl     0:00 /opt/brave.com/brave/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/prince/.config/BraveSoftware/Brave-Browser/Crash Reports --url=https://cr.brave.com --annotation=lsb-release=Ubuntu 25.04 --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=138.1.80.125 --initial-client-fd=4 --shared-client-connection
+   3447 ?        S      0:00 /opt/brave.com/brave/brave --type=zygote --no-zygote-sandbox --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+   3448 ?        S      0:00 /opt/brave.com/brave/brave --type=zygote --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+   3454 ?        S      0:00 /opt/brave.com/brave/brave --type=zygote --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable
+   3494 ?        Sl     1:46 /opt/brave.com/brave/brave --type=gpu-process --ozone-platform=wayland --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAABgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   3499 ?        Sl     0:14 /opt/brave.com/brave/brave --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   3500 ?        Sl     0:02 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.2PQ692 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+   3513 ?        Sl     0:00 /opt/brave.com/brave/brave --type=utility --utility-sub-type=storage.mojom.StorageService --lang=en-US --service-sandbox-type=utility --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   3524 ?        Ssl    0:01 /usr/libexec/gsd-xsettings
+   3537 ?        Sl     0:01 /usr/libexec/mutter-x11-frames
+   3555 ?        Sl     0:00 /usr/libexec/ibus-x11
+   3585 ?        Sl     0:01 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=41424736 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   3758 ?        Sl     0:00 /usr/bin/snap userd
+   4150 ?        Sl     0:39 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=46197988 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4197 ?        Sl     0:09 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=15 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=56055034 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4227 ?        Sl     0:00 /opt/brave.com/brave/brave --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=3430 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4253 ?        Sl     0:00 /usr/bin/update-notifier
+   4342 ?        Sl     0:48 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=22 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=95993379 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4551 ?        Sl     0:01 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=43 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=326322445 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4573 ?        Sl     0:00 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=44 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=441206590 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4581 ?        Sl     0:00 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=45 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=472922267 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4597 ?        Sl     0:38 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --extension-process --init-isolate-as-foreground --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=47 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=476000632 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4606 ?        Sl     0:29 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --pdf-renderer --ozone-platform=wayland --lang=en-US --js-flags=--jitless --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=48 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=476446018 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4614 ?        Sl     0:06 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --pdf-renderer --ozone-platform=wayland --lang=en-US --js-flags=--jitless --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=49 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=476468328 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   4638 ?        Ssl    0:02 /usr/libexec/fwupd/fwupd
+   4716 ?        Sl     0:00 /usr/libexec/gvfsd-recent --spawner :1.21 /org/gtk/gvfs/exec_spaw/1
+   4717 ?        Sl     0:00 /usr/libexec/gvfsd-network --spawner :1.21 /org/gtk/gvfs/exec_spaw/2
+   4731 ?        Sl     0:00 /usr/libexec/gvfsd-dnssd --spawner :1.21 /org/gtk/gvfs/exec_spaw/3
+   4738 ?        Sl     0:00 /usr/libexec/gvfsd-wsdd --spawner :1.21 /org/gtk/gvfs/exec_spaw/4
+   4743 ?        S      0:00 python3 /usr/bin/wsdd --no-host --discovery --listen /run/user/1000/gvfsd/wsdd
+   4897 ?        I      0:04 [kworker/6:0-i915-unordered]
+   4937 ?        SLsl   0:08 /usr/share/code/code .
+   4941 ?        S      0:00 /usr/share/code/code --type=zygote --no-zygote-sandbox
+   4942 ?        S      0:00 /usr/share/code/code --type=zygote
+   4944 ?        S      0:00 /usr/share/code/code --type=zygote
+   4963 ?        Sl     0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/prince/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=76dd4eac-0b78-40be-848a-a4fc00ce819a&iid=76dd4eac-0b78-40be-848a-a4fc00ce819a&sid=76dd4eac-0b78-40be-848a-a4fc00ce819a --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.102.3 --annotation=lsb-release=Ubuntu 25.04 --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=35.6.0 --initial-client-fd=46 --shared-client-connection
+   4979 ?        Sl     0:06 /usr/share/code/code --type=zygote --no-zygote-sandbox
+   4985 ?        Sl     0:00 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=4963 --enable-crash-reporter=1d75497d-871f-405d-9857-ed9e2db89ae7,no_channel --user-data-dir=/home/prince/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8834757231865838772,707570837290425594,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+   5021 ?        Sl     0:32 /usr/share/code/code --type=zygote
+   5037 ?        Sl     0:04 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=4963 --enable-crash-reporter=1d75497d-871f-405d-9857-ed9e2db89ae7,no_channel --user-data-dir=/home/prince/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8834757231865838772,707570837290425594,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+   5038 ?        Sl     0:02 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=4963 --enable-crash-reporter=1d75497d-871f-405d-9857-ed9e2db89ae7,no_channel --user-data-dir=/home/prince/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8834757231865838772,707570837290425594,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+   5057 ?        Sl     0:03 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=4963 --enable-crash-reporter=1d75497d-871f-405d-9857-ed9e2db89ae7,no_channel --user-data-dir=/home/prince/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8834757231865838772,707570837290425594,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --variations-seed-version
+   5102 ?        I      0:00 [kworker/5:0-events]
+   5128 ?        I      0:00 [kworker/3:1]
+   5736 ?        I      0:01 [kworker/u32:2-i915]
+   5777 ?        I      0:00 [kworker/1:0-mm_percpu_wq]
+   5852 ?        Ssl    0:42 /usr/libexec/gnome-terminal-server
+   5859 pts/0    Ss     0:00 bash
+   5875 ?        I      0:00 [kworker/4:2-events]
+   5981 ?        I<     0:00 [kworker/u33:1-rtw_tx_wq]
+   5985 ?        Sl     0:28 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=68 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=1756641106 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   5994 ?        Sl     0:07 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=69 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=1766462697 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   6024 ?        I      0:01 [kworker/u32:1-events_unbound]
+   6045 ?        I      0:00 [kworker/0:0-i915-unordered]
+   6077 ?        I      0:00 [kworker/1:1-cgroup_destroy]
+   6098 ?        I<     0:01 [kworker/u33:2-rtw_tx_wq]
+   6102 ?        Sl     0:00 /opt/brave.com/brave/brave --type=renderer --crashpad-handler-pid=3430 --enable-crash-reporter=, --enable-distillability-service --origin-trial-public-key=bYUKPJoPnCxeNvu72j4EmPuK7tr1PAC7SHh8ld9Mw3E=,fMS4mpO6buLQ/QMd+zJmxzty/VQ6B1EUZqoCU04zoRU= --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=en-US --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=70 --time-ticks-at-unix-epoch=-1754214500618853 --launch-time-ticks=2370349480 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10144926210488532018,9838991022733078003,262144 --disable-features=EyeDropper --variations-seed-version=main@d22c1458121ad971c01561b6e9dcc136dabb6916
+   6114 ?        I      0:00 [kworker/u32:3-kvfree_rcu_reclaim]
+   6120 ?        I      0:00 [kworker/7:1-cgroup_destroy]
+   6134 ?        I      0:00 [kworker/2:0-cgroup_destroy]
+   6360 ?        I      0:00 [kworker/6:2]
+   6368 ?        Sl     0:36 /snap/snap-store/1270/bin/snap-store
+   6626 pts/1    Ss+    0:00 bash
+   6688 ?        Ssl    0:00 /usr/libexec/packagekitd
+   6802 ?        I<     0:00 [kworker/u33:0-i915_flip]
+   7568 ?        I      0:00 [kworker/5:2-events]
+   8100 ?        I      0:00 [kworker/0:2-events]
+   8611 ?        I      0:00 [kworker/1:2]
+   8617 pts/0    R+     0:00 ps ax
