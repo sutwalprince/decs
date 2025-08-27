@@ -14,13 +14,14 @@ bool canSend = false; // synchronization mechanism for notifying the parent that
 int i = 0 ;
 void sigHandle1(int sig) { 
     recvdString[i++] = '1' ;
-    // printf("%d" ,sig);
+    kill(getppid(),SIGUSR1);
     // TODO : Implement this function for when child receives a 1
 }
 
 void sigHandle0(int sig) {
     recvdString[i++] = '0' ;
-    // printf("%d" ,sig);
+     //printf("hello i am called handle 0 %d\n" ,sig);
+     kill(getppid(),SIGUSR1);
     // TODO : Implement this function for when child receives a 0
 }
 
@@ -31,11 +32,12 @@ void synchronizeParent (int sig) { // helper function to ensure the parent only 
 int main () {
 
     signal(SIGUSR1,synchronizeParent); // to ensure parent is able to understand when child is telling it that its ready to receive
+    //signal(SIGUSER2 , sendBit);
     int cpid = fork(); // fork
     if (cpid == 0) {
 
-        signal(SIGRTMAX,sigHandle1);
-        signal(SIGRTMIN,sigHandle0); 
+        signal(SIGUSR2,sigHandle1);
+        signal(SIGUSR1,sigHandle0); 
 
         /*
         TODO: Implement signal handling mechanisms to catch 1 or 0 from parent
@@ -76,16 +78,18 @@ int main () {
 
         printf("[Parent] Input bitstring is \t%s\n",tmp);
 
-        while (!canSend) {;} // Wait until the child is ready to receive
+       // while (!canSend) {;} // Wait until the child is ready to receive
         for (int i=0; i < LENGTH; i++) {
-            if (tmp[i] == '1') {
-                kill(cpid , SIGRTMAX) ;
+            while (!canSend) {;} 
+	    if (tmp[i] == '1') {
+                kill(cpid , SIGUSR2) ;
             }
             else {
                 // TODO : Add mechanism to send 0 to child
-                kill(cpid , SIGRTMIN) ;
+                kill(cpid , SIGUSR1) ;
             }
-            sleep(1); // This is necessary to ensure the signals 1]all get sent to child and 2] are sent in correct ordering, increase time to increase reliability
+	    canSend = false ;
+            //sleep(1); // This is necessary to ensure the signals 1]all get sent to child and 2] are sent in correct ordering, increase time to increase reliability
         }
         wait(NULL); // reap the child
     }

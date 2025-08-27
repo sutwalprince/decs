@@ -16,6 +16,8 @@ void error(char *msg)
 
 int main(int argc, char *argv[])
 {
+     unlink(SOCK_PATH);
+
      int sockfd;
      char buffer[256];
      struct sockaddr_un serv_addr, cli_addr;
@@ -42,13 +44,20 @@ int main(int argc, char *argv[])
      bzero(buffer,256);
      int len = sizeof(cli_addr);
 
-     printf("Server ready\n");
+     printf("Server ready %d\n" , len);
      
      n = recvfrom(sockfd, buffer, 255, 0, (struct sockaddr *)&cli_addr, &len);
-     
-     if (n < 0) error("ERROR reading from socket");
-     printf("Here is the message: %s\n",buffer);
+	//printf("%d" , n ) ;
+     int file_size = atoi(buffer) ;
+     printf("%d",file_size);
 
+     int rcvd_size = 0 ;
+	 while(rcvd_size < file_size){
+          bzero(buffer,256);
+          n = recvfrom(sockfd, buffer, 255, 0, (struct sockaddr *)&cli_addr, &len);
+          printf("%s" , buffer) ;
+          rcvd_size += 256 ;
+    }
      unlink(SOCK_PATH);
      return 0; 
 }
