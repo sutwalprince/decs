@@ -13,7 +13,7 @@ else{
     int child_pid = fork() ;
     if(child_pid > 0){
       waitpid(child_pid , &returnstatus , 0) ;
-      printf("Command successfully completed \n");
+      printf("Command successfully completed \n %d" , returnstatus);
      
     }else if(child_pid == 0){
       

@@ -5,14 +5,13 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <signal.h>
-
+#include <stdbool.h>
 
 #define MAX_INPUT_SIZE 1024
 #define MAX_TOKEN_SIZE 64
 #define MAX_NUM_TOKENS 64
 #define MAX_BACKGROUND_PROCESSES 64
 
-using namespace std;
 /* Splits the string by space and returns the array of tokens
 *
 */
@@ -55,10 +54,10 @@ int main(int argc, char* argv[]) {
 	int arr_top = -1 ;
 	int background_processes[MAX_BACKGROUND_PROCESSES] ;
 	while(1) {			
-		// signal(SIGINT,signalHandler);  
-		struct sigaction act = { 0 };
-		act.sa_handler = &signalHandler;
-		sigaction(SIGINT,&act,NULL);
+		 signal(SIGINT,signalHandler);  
+		//struct sigaction act = { 0 };
+		//act.sa_handler = &signalHandler;
+		//sigaction(SIGINT,&act,NULL);
 
 
 		/* BEGIN: TAKING INPUT */
@@ -135,6 +134,7 @@ int main(int argc, char* argv[]) {
 			}else if(child_pid == 0){
 				// child process
 				if(execvp(tokens[0], tokens) == -1){
+					printf("COmmand not found") ;
 					exit(1) ;
 				}
 			}else{

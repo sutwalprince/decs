@@ -47,17 +47,19 @@ int main(int argc, char *argv[])
      printf("Server ready %d\n" , len);
      
      n = recvfrom(sockfd, buffer, 255, 0, (struct sockaddr *)&cli_addr, &len);
-	//printf("%d" , n ) ;
+
      int file_size = atoi(buffer) ;
      printf("%d",file_size);
 
-     int rcvd_size = 0 ;
-	 while(rcvd_size < file_size){
-          bzero(buffer,256);
-          n = recvfrom(sockfd, buffer, 255, 0, (struct sockaddr *)&cli_addr, &len);
-          printf("%s" , buffer) ;
-          rcvd_size += 256 ;
+    //  char file_data[file_size];
+    int i = 0;
+    while (i <= file_size){
+        bzero(buffer,256);
+        i+=256 ;
+        n = recvfrom(sockfd, buffer, 256, 0, (struct sockaddr *)&cli_addr, &len);
+        printf("%s" , buffer) ;
     }
+    
      unlink(SOCK_PATH);
      return 0; 
 }

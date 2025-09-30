@@ -36,8 +36,8 @@ int main () {
     int cpid = fork(); // fork
     if (cpid == 0) {
 
-        signal(SIGUSR2,sigHandle1);
         signal(SIGUSR1,sigHandle0); 
+        signal(SIGUSR2,sigHandle1);
 
         /*
         TODO: Implement signal handling mechanisms to catch 1 or 0 from parent
@@ -81,14 +81,14 @@ int main () {
        // while (!canSend) {;} // Wait until the child is ready to receive
         for (int i=0; i < LENGTH; i++) {
             while (!canSend) {;} 
-	    if (tmp[i] == '1') {
+	        if (tmp[i] == '1') {
                 kill(cpid , SIGUSR2) ;
             }
             else {
                 // TODO : Add mechanism to send 0 to child
                 kill(cpid , SIGUSR1) ;
             }
-	    canSend = false ;
+	        canSend = false ;
             //sleep(1); // This is necessary to ensure the signals 1]all get sent to child and 2] are sent in correct ordering, increase time to increase reliability
         }
         wait(NULL); // reap the child
